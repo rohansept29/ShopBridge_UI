@@ -1,0 +1,29 @@
+﻿<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Delete</th>
+    </tr>
+    @if (ViewBag.ItemList != null)
+    {
+        foreach (var d in ViewBag.ItemList)
+        {
+            <tr>
+                @if (d.ItemImage != null)
+                {
+                    var imgSrc = String.Format("data:image/gif;base64,{0}", d.ItemImage);
+                    <td><img src="@imgSrc" style="width:80px;height:80px" /><br />@Html.ActionLink((string)d.Name, "Details", "Items", new { id = d.Id }, null)</td>
+                }
+
+                else
+                {
+                    <td>@Html.ActionLink((string)d.Name, "Details", "Items", new { id = d.Id }, null)</td>
+                }
+                <td>@d.Description</td>
+                <td>@d.Price</td>
+                <td>@Ajax.ActionLink(" ", "Delete", "Items", new { id = d.Id  }, new AjaxOptions { HttpMethod = "POST", OnSuccess = "RemoveRow" }, new { @class = "glyphicon glyphicon-trash", Style = "color:Red;" })</td>
+            </tr>
+        }
+    }
+</table>

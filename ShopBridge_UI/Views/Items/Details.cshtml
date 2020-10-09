@@ -1,0 +1,82 @@
+﻿@model ShopBridge_UI.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<table class="table table-responsive">
+    <tr>
+
+        <td>
+            <div>
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <td>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.Name)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.DisplayNameFor(model => model.Description)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.Description)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.Price)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.DisplayNameFor(model => model.AddedOn)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.AddedOn)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div>
+                @{ 
+                    var imgSrc = String.Format("data:image/gif;base64,{0}", Model.ItemImage);
+                    if (Model.ItemImage != null)
+                    {
+
+                        <img src="@imgSrc" style="width:120px;height:120px;" />
+                    }
+                    else
+                    {
+                        <img src="~/Images/No_image_available.svg" style="width:120px;height:120px;" />
+                    }
+                }
+
+            </div>
+
+        </td>
+    </tr>
+
+</table>
+
+@*<p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@
