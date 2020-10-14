@@ -31,7 +31,7 @@ ShopBridge UI
 
 ### ScreenShots
 
-ItemsList - https://user-images.githubusercontent.com/35596415/96012896-47da3a00-0e62-11eb-8fc2-e3e74f829a53.png
-Form - https://user-images.githubusercontent.com/35596415/96013111-840d9a80-0e62-11eb-8fc0-0f4b3a163efa.png
-DeleteItem - https://user-images.githubusercontent.com/35596415/96013120-8839b800-0e62-11eb-9ef2-841ac1f48667.png
-DetailsView - https://user-images.githubusercontent.com/35596415/96013132-8bcd3f00-0e62-11eb-993a-e63ede633292.png
+1) ItemsList - https://user-images.githubusercontent.com/35596415/96012896-47da3a00-0e62-11eb-8fc2-e3e74f829a53.png
+2) Form - https://user-images.githubusercontent.com/35596415/96013111-840d9a80-0e62-11eb-8fc0-0f4b3a163efa.png
+3) DeleteItem - https://user-images.githubusercontent.com/35596415/96013120-8839b800-0e62-11eb-9ef2-841ac1f48667.png
+4) DetailsView - https://user-images.githubusercontent.com/35596415/96013132-8bcd3f00-0e62-11eb-993a-e63ede633292.png
