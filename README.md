@@ -12,7 +12,7 @@ ShopBridge UI
 
 1) Front end / backend : ASP.Net MVC
 2) Database MSSQL with EntityFramework integration Database First approach
-3) AJAX calls for handling asynhronous operations
+3) AJAX calls for handling asynchronous operations
 4) Basic BootStrap, Javascript and jQuery for minimal and effective UI
 
 ### Time taken for tasks
@@ -24,7 +24,7 @@ ShopBridge UI
 
 ### Functionality coverd
 
-1) Listing of availble products in inventory
+1) Listing of available products in inventory
 2) Addition of new product
 3) Edit/View details of the product
 4) Delete Product
